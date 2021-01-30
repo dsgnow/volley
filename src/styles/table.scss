@@ -10,8 +10,13 @@
 
   h3 {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 0 0 50px 0;
+    font-size: 1.2rem;
+    margin: 0 0 40px 0;
+
+    @media (min-width: 800px) {
+      font-size: 1.5rem;
+      margin: 0 0 50px 0;
+    }
   }
 }
 
@@ -20,11 +25,13 @@ table {
   border-left: 1px solid $tableBorderColor;
   border-top: 1px solid $tableBorderColor;
 }
+
 th,
 td {
   border-right: 1px solid $tableBorderColor;
   border-bottom: 1px solid $tableBorderColor;
 }
+
 th {
   background-color: $thBgColor;
   color: $thColor;
