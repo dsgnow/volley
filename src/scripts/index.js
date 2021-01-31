@@ -52,7 +52,7 @@ const allPlayers = [
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   let players = [
-    { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 01:00:00' },
+    { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 03:00:00' },
     { id: '25', name: 'Eugeniusz', skill: 7, endTime: '2021/02/03 00:00:00' },
     { id: '26', name: 'Iza Ćwiertnia', skill: 7, endTime: '2021/02/03 02:00:00' },
     { id: '20', name: 'Patryk Kacprzycki', skill: 7, endTime: '2021/02/03 00:00:00' },
