@@ -114,7 +114,7 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
       bestGroupsNumber = 6;
     } else if (allPlayers <= 30 && allPlayers > 20) {
       bestGroupsNumber = 4;
-    } else if (allPlayers <= 20 && allPlayers >= 8) {
+    } else if (allPlayers <= 20 && allPlayers >= 6) {
       bestGroupsNumber = 2;
     } else {
       bestGroupsNumber = 1;
