@@ -26,7 +26,7 @@ const allPlayers = [
   { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00' },
   { id: '16', name: 'Ma Ra', skill: 10, endTime: '2021/02/03 00:00:00' },
   { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00' },
-  { id: '14', name: 'Damian Czapla', skill: 7, endTime: '2021/02/03 01:00:00' },
+  { id: '14', name: 'Damian Czapla', skill: 10, endTime: '2021/02/03 01:00:00' },
   { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00' },
   { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00' },
   { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00' },
@@ -79,6 +79,7 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   };
 
   const assignPlayersToGroups = (players) => {
+    let groupToPush = 0;
     players.forEach(() => {
       //   indexOfMaxSkill = players.indexOf(Math.max(...players.skill));
       let indexOfMaxSkill = players
@@ -92,26 +93,22 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
           )
         );
 
-      let indexOfLowerGroupPlayersCount = groups
-        .map(function (e) {
-          return e.playersCount;
-        })
-        .indexOf(
-          Math.min.apply(
-            Math,
-            groups.map((o) => o.playersCount)
-          )
-        );
+      groups[groupToPush].playersCount++;
 
-      groups[indexOfLowerGroupPlayersCount].playersCount++;
+      groups[groupToPush].skill += players[indexOfMaxSkill].skill;
 
-      groups[indexOfLowerGroupPlayersCount].skill += players[indexOfMaxSkill].skill;
-
-      groups[indexOfLowerGroupPlayersCount].players == ''
-        ? (groups[indexOfLowerGroupPlayersCount].players += players[indexOfMaxSkill].name)
-        : (groups[indexOfLowerGroupPlayersCount].players += `, ${players[indexOfMaxSkill].name}`);
+      groups[groupToPush].players == ''
+        ? (groups[groupToPush].players += players[indexOfMaxSkill].name)
+        : (groups[groupToPush].players += `, ${players[indexOfMaxSkill].name}`);
 
       players[indexOfMaxSkill].skill = '';
+
+      if (groupToPush === groups.length - 1) {
+        groups.reverse();
+        groupToPush = 0;
+      } else {
+        groupToPush++;
+      }
     });
   };
 
@@ -178,6 +175,5 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
 
   createAllGamesTables();
   createAllPLayersTables();
-  console.log(GrupyImg);
   document.querySelector('.wrapImage__image').src = GrupyImg;
 });
