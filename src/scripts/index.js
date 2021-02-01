@@ -1,6 +1,8 @@
 import 'normalize.css';
 import '../styles/index.scss';
 import GrupyImg from '../img/grupy.svg';
+document.querySelector('.wrapImage__image').src = GrupyImg;
+
 if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
@@ -121,13 +123,6 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
     }
   }
 
-  // shuffleArray(players);
-  filterPlayersPlayingUntilTheGivenTime(gameEndTime);
-  calcBestPlayersNumberInGroup(playersPlayingUntilTheGivenTime.length);
-  createGroups(numberOfPlayersInTheGroup);
-  assignPlayersToGroups(playersPlayingUntilTheGivenTime);
-  console.log(groups);
-
   $(document).ready(function () {
     $('.myTable').each(function (index) {
       $(`#myTable${index + 1}`).DataTable({
@@ -145,7 +140,6 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   });
 
   let html = '';
-
   const createAllGamesTables = () => {
     groups.forEach(function (e, i) {
       html +=
@@ -163,7 +157,6 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   };
 
   let htmlAllPlayers = '';
-
   const createAllPLayersTables = () => {
     allPlayers.forEach(function (e, i) {
       htmlAllPlayers +=
@@ -173,7 +166,12 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
     document.getElementById('dataTable4').innerHTML = htmlAllPlayers;
   };
 
+  // shuffleArray(players);
+  filterPlayersPlayingUntilTheGivenTime(gameEndTime);
+  calcBestPlayersNumberInGroup(playersPlayingUntilTheGivenTime.length);
+  createGroups(numberOfPlayersInTheGroup);
+  assignPlayersToGroups(playersPlayingUntilTheGivenTime);
+  console.log(groups);
   createAllGamesTables();
   createAllPLayersTables();
-  document.querySelector('.wrapImage__image').src = GrupyImg;
 });
