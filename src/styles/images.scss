@@ -1,0 +1,15 @@
+.wrapImage {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  @media (min-width: 800px) {
+    width: 40%;
+  }
+
+  &--image {
+    width: 80%;
+  }
+}

@@ -1,15 +1,11 @@
 import 'normalize.css';
 import '../styles/index.scss';
-
+import GrupyImg from '../img/grupy.svg';
 if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
 
-let gameEndTimes = [
-  '2021/02/02 21:31:00',
-  '2021/02/03 00:01:00',
-  '2021/02/03 01:01:00'
-];
+let gameEndTimes = ['2021/02/02 21:31:00', '2021/02/03 00:01:00', '2021/02/03 01:01:00'];
 
 const allPlayers = [
   { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 03:00:00' },
@@ -47,55 +43,13 @@ const allPlayers = [
   { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/02/03 01:00:00' },
   { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00' },
   { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00' },
-  { id: '23', name: 'Monika Szablińska', skill: 3, endTime: '2021/02/03 02:00:00' },
+  { id: '23', name: 'Monika Szablińska', skill: 3, endTime: '2021/02/03 02:00:00' }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
-  let players = [
-    { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 03:00:00' },
-    { id: '25', name: 'Eugeniusz', skill: 7, endTime: '2021/02/03 00:00:00' },
-    { id: '26', name: 'Iza Ćwiertnia', skill: 7, endTime: '2021/02/03 02:00:00' },
-    { id: '20', name: 'Patryk Kacprzycki', skill: 7, endTime: '2021/02/03 00:00:00' },
-    { id: '2', name: 'Piotr Stachowicz', skill: 6, endTime: '2021/02/03 01:00:00' },
-    { id: '7', name: 'Grzegorz Gil', skill: 9, endTime: '2021/02/03 02:00:00' },
-    { id: '24', name: 'Katarzyna Dziadecka', skill: 5, endTime: '2021/02/03 02:00:00' },
-    { id: '27', name: 'Adam C', skill: 9, endTime: '2021/02/03 01:00:00' },
-    { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 01:00:00' },
-    { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00' },
-    { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00' },
-    { id: '13', name: 'Michał Foit', skill: 8, endTime: '2021/02/03 01:00:00' },
-    { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00' },
-    { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00' },
-    { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00' },
-    { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00' },
-    { id: '16', name: 'Ma Ra', skill: 10, endTime: '2021/02/03 00:00:00' },
-    { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00' },
-    { id: '14', name: 'Damian Czapla', skill: 7, endTime: '2021/02/03 01:00:00' },
-    { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00' },
-    { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00' },
-    { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00' },
-    { id: '11', name: 'Marcin Bosman', skill: 8, endTime: '2021/02/03 02:00:00' },
-    { id: '34', name: 'Paweł Wojciechowski', skill: 9, endTime: '2021/02/03 00:00:00' },
-    { id: '35', name: 'Kamil Wiża', skill: 6, endTime: '2021/02/03 00:00:00' },
-    { id: '36', name: 'Wiktoria Wróblewska', skill: 6, endTime: '2021/02/03 00:00:00' },
-    { id: '37', name: 'Łukasz Wróblewski', skill: 5, endTime: '2021/02/03 00:00:00' },
-    { id: '38', name: 'Sebastian Wojtal', skill: 6, endTime: '2021/02/03 01:00:00' },
-    { id: '39', name: 'Kasia Jasińska', skill: 6, endTime: '2021/02/03 01:00:00' },
-    { id: '40', name: 'Michał Rybakowski', skill: 9, endTime: '2021/02/03 00:00:00' },
-    { id: '41', name: 'Przemysław Ważny', skill: 9, endTime: '2021/02/03 00:00:00' },
-    { id: '42', name: 'Bartek Stadler', skill: 10, endTime: '2021/02/03 00:00:00' },
-    { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/02/03 01:00:00' },
-    { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00' },
-    { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00' },
-    { id: '23', name: 'Monika Szablińska', skill: 3, endTime: '2021/02/03 02:00:00' },
-  ];
-
+  let players = JSON.parse(JSON.stringify(allPlayers));
   let groups = [];
-
   let playersPlayingUntilTheGivenTime = [];
-
-  let indexOfMaxSkill;
-  let indexOfLowerGroupPlayersCount;
   let numberOfPlayersInTheGroup;
 
   const filterPlayersPlayingUntilTheGivenTime = (gameEndTime, index) => {
@@ -104,11 +58,6 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
 
   const calcBestPlayersNumberInGroup = (allPlayers) => {
     let bestGroupsNumber;
-    let squads2 = allPlayers % 4;
-    let squads4 = allPlayers % 2;
-
-    console.log(allPlayers)
-
 
     if (allPlayers > 30) {
       bestGroupsNumber = 6;
@@ -202,26 +151,33 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
 
   const createAllGamesTables = () => {
     groups.forEach(function (e, i) {
-        html += '<tr>' + '<td>' + `${e.name}<br>Osób: ${e.playersCount}` + '</td>' + '<td>' + e.players + '</td>' + '</tr>';
-      });
+      html +=
+        '<tr>' +
+        '<td>' +
+        `<b>${e.name.toUpperCase()}</b> / graczy: ${e.playersCount}` +
+        '</td>' +
+        '<td>' +
+        e.players +
+        '</td>' +
+        '</tr>';
+    });
 
     document.getElementById(`dataTable${indexgameEndTimes}`).innerHTML = html;
-  }
+  };
 
   let htmlAllPlayers = '';
 
   const createAllPLayersTables = () => {
     allPlayers.forEach(function (e, i) {
-      htmlAllPlayers += '<tr>' + '<td>' + e.name + '</td>' + '<td>' + e.endTime + '</td>' + '</tr>';
-    });  
+      htmlAllPlayers +=
+        '<tr>' + '<td>' + e.name + '</td>' + '<td>' + e.endTime.substring(11) + '</td>' + '</tr>';
+    });
 
     document.getElementById('dataTable4').innerHTML = htmlAllPlayers;
-  }
+  };
 
   createAllGamesTables();
   createAllPLayersTables();
- });
-
- 
-
-
+  console.log(GrupyImg);
+  document.querySelector('.wrapImage__image').src = GrupyImg;
+});
