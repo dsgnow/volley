@@ -9,43 +9,43 @@ if (process.env.NODE_ENV === 'development') {
 
 let gameEndTimes = ['2021/02/02 21:31:00', '2021/02/03 00:01:00', '2021/02/03 01:01:00'];
 
-const allPlayers = [
-  { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 03:00:00' },
-  { id: '25', name: 'Eugeniusz', skill: 7, endTime: '2021/02/03 00:00:00' },
-  { id: '26', name: 'Iza Ćwiertnia', skill: 7, endTime: '2021/02/03 02:00:00' },
-  { id: '20', name: 'Patryk Kacprzycki', skill: 7, endTime: '2021/02/03 00:00:00' },
-  { id: '7', name: 'Grzegorz Gil', skill: 9, endTime: '2021/02/03 02:00:00' },
-  { id: '24', name: 'Katarzyna Dziadecka', skill: 5, endTime: '2021/02/03 02:00:00' },
-  { id: '27', name: 'Adam C', skill: 9, endTime: '2021/02/03 02:00:00' },
-  { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 02:00:00' },
-  { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00' },
-  { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00' },
-  { id: '13', name: 'Sebastian Krakowski', skill: 6, endTime: '2021/02/03 00:00:00' },
-  { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00' },
-  { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00' },
-  { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00' },
-  { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00' },
-  { id: '16', name: 'Ma Ra', skill: 10, endTime: '2021/02/03 00:00:00' },
-  { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00' },
-  { id: '14', name: 'Damian Czapla', skill: 10, endTime: '2021/02/03 01:00:00' },
-  { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00' },
-  { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00' },
-  { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00' },
-  { id: '11', name: 'Marcin Bosman', skill: 8, endTime: '2021/02/03 02:00:00' },
-  { id: '34', name: 'Paweł Wojciechowski', skill: 9, endTime: '2021/02/03 00:00:00' },
-  { id: '35', name: 'Kamil Wiża', skill: 6, endTime: '2021/02/03 00:00:00' },
-  { id: '36', name: 'Wiktoria Wróblewska', skill: 6, endTime: '2021/02/03 00:00:00' },
-  { id: '37', name: 'Łukasz Wróblewski', skill: 5, endTime: '2021/02/03 00:00:00' },
-  { id: '38', name: 'Sebastian Wojtal', skill: 6, endTime: '2021/02/03 01:00:00' },
-  { id: '39', name: 'Kasia Jasińska', skill: 6, endTime: '2021/02/03 01:00:00' },
-  { id: '40', name: 'Michał Rybakowski', skill: 9, endTime: '2021/02/03 00:00:00' },
-  { id: '41', name: 'Przemysław Ważny', skill: 9, endTime: '2021/02/03 00:00:00' },
-  { id: '42', name: 'Bartek Stadler', skill: 10, endTime: '2021/02/03 00:00:00' },
-  { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/02/03 01:00:00' },
-  { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00' },
-  { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00' },
-  { id: '23', name: 'Katarzyna Radlak Maga', skill: 6, endTime: '2021/02/03 01:00:00' },
-  { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00' }
+let allPlayers = [
+  { id: '1', name: 'Brylant Barber', skill: 8, endTime: '2021/02/03 03:00:00', info: '' },
+  { id: '25', name: 'Eugeniusz', skill: 7, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '26', name: 'Iza Ćwiertnia', skill: 7, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '20', name: 'Patryk Kacprzycki', skill: 7, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '7', name: 'Grzegorz Gil', skill: 9, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '24', name: 'Katarzyna Dziadecka', skill: 5, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '27', name: 'Adam C', skill: 9, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '13', name: 'Sebastian Krakowski', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '16', name: 'Ma Ra', skill: 10, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '14', name: 'Damian Czapla', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '11', name: 'Marcin Bosman', skill: 8, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '34', name: 'Paweł Wojciechowski', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '35', name: 'Kamil Wiża', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '36', name: 'Wiktoria Wróblewska', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '37', name: 'Łukasz Wróblewski', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '38', name: 'Sebastian Wojtal', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '39', name: 'Kasia Jasińska', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '40', name: 'Michał Rybakowski', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '41', name: 'Przemysław Ważny', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '42', name: 'Bartek Stadler', skill: 10, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '23', name: 'Katarzyna Radlak Maga', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00', info: '' }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
@@ -90,7 +90,17 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
           )
         );
 
+      let indexOfName = allPlayers.findIndex((x) => x.name === players[indexOfMaxSkill].name);
+
       const pushPlayersToGroups = () => {
+        allPlayers[indexOfName].info == ''
+          ? (allPlayers[indexOfName].info += `Rotacja ${indexgameEndTimes + 1} / Grupa: ${
+              groups[groupToPush].id
+            }`)
+          : (allPlayers[indexOfName].info += `, <br>Rotacja ${indexgameEndTimes + 1} / Grupa: ${
+              groups[groupToPush].id
+            }`);
+
         groups[groupToPush].playersCount++;
 
         groups[groupToPush].skill += players[indexOfMaxSkill].skill;
@@ -164,7 +174,14 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   const createAllPLayersTables = () => {
     allPlayers.forEach(function (e) {
       htmlAllPlayers +=
-        '<tr>' + '<td>' + e.name + '</td>' + '<td>' + e.endTime.substring(11) + '</td>' + '</tr>';
+        '<tr>' +
+        '<td>' +
+        `<b>${e.name}</b><br>${e.info}` +
+        '</td>' +
+        '<td>' +
+        e.endTime.substring(11) +
+        '</td>' +
+        '</tr>';
     });
 
     document.getElementById('dataTable4').innerHTML = htmlAllPlayers;
