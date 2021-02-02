@@ -61,9 +61,9 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   const calcBestNumberOfGroups = (allPlayers) => {
     if (allPlayers > 30) {
       bestGroupsNumber = 6;
-    } else if (allPlayers <= 30 && allPlayers >= 20) {
+    } else if (allPlayers <= 30 && allPlayers >= 19) {
       bestGroupsNumber = 4;
-    } else if (allPlayers < 20 && allPlayers >= 6) {
+    } else if (allPlayers < 19 && allPlayers >= 6) {
       bestGroupsNumber = 2;
     } else {
       bestGroupsNumber = 1;
