@@ -17,7 +17,7 @@ let allPlayers = [
   { id: '7', name: 'Grzegorz Gil', skill: 9, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '24', name: 'Katarzyna Dziadecka', skill: 5, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '27', name: 'Adam C', skill: 9, endTime: '2021/02/03 02:00:00', info: '' },
-  { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
+  { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
