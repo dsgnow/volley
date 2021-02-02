@@ -24,14 +24,14 @@ let allPlayers = [
   { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00', info: '' },
-  { id: '45', name: 'Michał Morawiec', skill: 6, endTime: '2021/02/03 00:00:00' },
+  { id: '45', name: 'Michał Morawiec', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '14', name: 'Damian Czapla', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '11', name: 'Marcin Bosman', skill: 8, endTime: '2021/02/03 02:00:00', info: '' },
-  { id: '46', name: 'Kolega Patryka', skill: 6, endTime: '2021/02/03 00:00:00' },
+  { id: '46', name: 'Kolega Patryka', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '35', name: 'Kamil Wiża', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '36', name: 'Wiktoria Wróblewska', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '37', name: 'Łukasz Wróblewski', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
@@ -45,7 +45,7 @@ let allPlayers = [
   { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '23', name: 'Katarzyna Radlak Maga', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00', info: '' },
-  { id: '47', name: 'Piotr Pawełek', skill: 8, endTime: '2021/02/03 00:00:00' }
+  { id: '47', name: 'Piotr Pawełek', skill: 8, endTime: '2021/02/03 00:00:00', info: '' }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
