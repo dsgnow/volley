@@ -43,5 +43,8 @@ const allPlayers = [
   { id: '42', name: 'Bartek Stadler', skill: 10, endTime: '2021/01/01 23:59:59' },
   { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/01/02 01:00:00' },
   { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/01/02 01:00:00' },
-  { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/01/01 23:59:59' }
+  { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/01/01 23:59:59' },
+  { id: '45', name: 'Michał Morawiec', skill: 6, endTime: '2021/01/01 00:00:00' },
+  { id: '46', name: 'Kolega Patryka', skill: 6, endTime: '2021/01/01 00:00:00' },
+  { id: '47', name: 'Piotr Pawełek', skill: 8, endTime: '2021/01/01 00:00:00' }
 ];

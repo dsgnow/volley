@@ -20,19 +20,18 @@ let allPlayers = [
   { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00', info: '' },
-  { id: '13', name: 'Sebastian Krakowski', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '31', name: 'Paweł Bis', skill: 7, endTime: '2021/02/03 00:00:00', info: '' },
-  { id: '16', name: 'Ma Ra', skill: 10, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '45', name: 'Michał Morawiec', skill: 6, endTime: '2021/02/03 00:00:00' },
   { id: '5', name: 'Wojtek Spalik', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '14', name: 'Damian Czapla', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '33', name: 'Damian Dmowski', skill: 10, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '10', name: 'Aleksandra Żółkiewicz', skill: 5, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '12', name: 'Damian Kita', skill: 10, endTime: '2021/02/03 02:00:00', info: '' },
   { id: '11', name: 'Marcin Bosman', skill: 8, endTime: '2021/02/03 02:00:00', info: '' },
-  { id: '34', name: 'Paweł Wojciechowski', skill: 9, endTime: '2021/02/03 00:00:00', info: '' },
+  { id: '46', name: 'Kolega Patryka', skill: 6, endTime: '2021/02/03 00:00:00' },
   { id: '35', name: 'Kamil Wiża', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '36', name: 'Wiktoria Wróblewska', skill: 6, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '37', name: 'Łukasz Wróblewski', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
@@ -45,7 +44,8 @@ let allPlayers = [
   { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00', info: '' },
   { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00', info: '' },
   { id: '23', name: 'Katarzyna Radlak Maga', skill: 6, endTime: '2021/02/03 01:00:00', info: '' },
-  { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00', info: '' }
+  { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00', info: '' },
+  { id: '47', name: 'Piotr Pawełek', skill: 8, endTime: '2021/02/03 00:00:00' }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
@@ -192,7 +192,7 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   calcBestNumberOfGroups(playersPlayingUntilTheGivenTime.length);
   createGroups(bestGroupsNumber);
   assignPlayersToGroups(playersPlayingUntilTheGivenTime);
-  console.log(groups);
+  // console.log(groups);
   createAllGamesTables();
   createAllPLayersTables();
 });
