@@ -1,7 +1,7 @@
 import 'normalize.css';
 import '../styles/index.scss';
-import GrupyImg from '../img/grupy.svg';
-document.querySelector('.wrapImage__image').src = GrupyImg;
+import GroupsImage from '../img/grupy.svg';
+document.querySelector('.wrapImage__image').src = GroupsImage;
 
 if (process.env.NODE_ENV === 'development') {
   require('../index.html');
@@ -14,14 +14,13 @@ const allPlayers = [
   { id: '25', name: 'Eugeniusz', skill: 7, endTime: '2021/02/03 00:00:00' },
   { id: '26', name: 'Iza Ćwiertnia', skill: 7, endTime: '2021/02/03 02:00:00' },
   { id: '20', name: 'Patryk Kacprzycki', skill: 7, endTime: '2021/02/03 00:00:00' },
-  { id: '2', name: 'Piotr Stachowicz', skill: 6, endTime: '2021/02/03 01:00:00' },
   { id: '7', name: 'Grzegorz Gil', skill: 9, endTime: '2021/02/03 02:00:00' },
   { id: '24', name: 'Katarzyna Dziadecka', skill: 5, endTime: '2021/02/03 02:00:00' },
   { id: '27', name: 'Adam C', skill: 9, endTime: '2021/02/03 01:00:00' },
   { id: '28', name: 'Mateusz Hadelko', skill: 10, endTime: '2021/02/03 01:00:00' },
   { id: '21', name: 'Ewa Kozłowska', skill: 6, endTime: '2021/02/03 01:00:00' },
   { id: '8', name: 'Dorian Pilot', skill: 4, endTime: '2021/02/03 01:00:00' },
-  { id: '13', name: 'Michał Foit', skill: 8, endTime: '2021/02/03 01:00:00' },
+  { id: '13', name: 'Sebastian Krakowski', skill: 6, endTime: '2021/02/03 00:00:00' },
   { id: '29', name: 'Magda Staniczek', skill: 5, endTime: '2021/02/03 00:00:00' },
   { id: '30', name: 'Klaudia Klucewicz', skill: 5, endTime: '2021/02/03 01:00:00' },
   { id: '18', name: 'Mateusz Szołtysek', skill: 6, endTime: '2021/02/03 00:00:00' },
@@ -45,36 +44,33 @@ const allPlayers = [
   { id: '43', name: 'Marcin Piela', skill: 8, endTime: '2021/02/03 01:00:00' },
   { id: '43', name: 'Rafał Kurkowski', skill: 9, endTime: '2021/02/03 01:00:00' },
   { id: '44', name: 'Dagmara Anna', skill: 5, endTime: '2021/02/03 00:00:00' },
-  { id: '23', name: 'Monika Szablińska', skill: 3, endTime: '2021/02/03 02:00:00' }
+  { id: '23', name: 'Katarzyna Radlak Maga', skill: 6, endTime: '2021/02/03 01:00:00' },
+  { id: '2', name: 'Piotr Stachowicz', skill: 7, endTime: '2021/02/03 01:00:00' }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   let players = JSON.parse(JSON.stringify(allPlayers));
   let groups = [];
   let playersPlayingUntilTheGivenTime = [];
-  let numberOfPlayersInTheGroup;
+  let bestGroupsNumber;
 
-  const filterPlayersPlayingUntilTheGivenTime = (gameEndTime, index) => {
+  const filterPlayersPlayingUntilTheGivenTime = (gameEndTime) => {
     playersPlayingUntilTheGivenTime = players.filter((player) => player.endTime >= gameEndTime);
   };
 
-  const calcBestPlayersNumberInGroup = (allPlayers) => {
-    let bestGroupsNumber;
-
+  const calcBestNumberOfGroups = (allPlayers) => {
     if (allPlayers > 30) {
       bestGroupsNumber = 6;
-    } else if (allPlayers <= 30 && allPlayers > 20) {
+    } else if (allPlayers <= 30 && allPlayers >= 20) {
       bestGroupsNumber = 4;
-    } else if (allPlayers <= 20 && allPlayers >= 6) {
+    } else if (allPlayers < 20 && allPlayers >= 6) {
       bestGroupsNumber = 2;
     } else {
       bestGroupsNumber = 1;
     }
-
-    numberOfPlayersInTheGroup = bestGroupsNumber;
   };
 
-  const createGroups = (bestGroupsNumber) => {
+  const createGroups = () => {
     for (let i = 0; i < bestGroupsNumber; i++) {
       groups[i] = { id: i + 1, name: `grupa ${i + 1}`, skill: 0, players: '', playersCount: 0 };
     }
@@ -83,7 +79,6 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
   const assignPlayersToGroups = (players) => {
     let groupToPush = 0;
     players.forEach(() => {
-      //   indexOfMaxSkill = players.indexOf(Math.max(...players.skill));
       let indexOfMaxSkill = players
         .map(function (e) {
           return e.skill;
@@ -95,53 +90,63 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
           )
         );
 
-      groups[groupToPush].playersCount++;
+      const pushPlayersToGroups = () => {
+        groups[groupToPush].playersCount++;
 
-      groups[groupToPush].skill += players[indexOfMaxSkill].skill;
+        groups[groupToPush].skill += players[indexOfMaxSkill].skill;
 
-      groups[groupToPush].players == ''
-        ? (groups[groupToPush].players += players[indexOfMaxSkill].name)
-        : (groups[groupToPush].players += `, ${players[indexOfMaxSkill].name}`);
+        groups[groupToPush].players == ''
+          ? (groups[groupToPush].players += players[indexOfMaxSkill].name)
+          : (groups[groupToPush].players += `, ${players[indexOfMaxSkill].name}`);
 
-      players[indexOfMaxSkill].skill = '';
+        players[indexOfMaxSkill].skill = '';
 
-      if (groupToPush === groups.length - 1) {
-        groups.reverse();
-        groupToPush = 0;
-      } else {
-        groupToPush++;
-      }
+        if (groupToPush === groups.length - 1) {
+          groups.reverse();
+          groupToPush = 0;
+        } else {
+          groupToPush++;
+        }
+      };
+      pushPlayersToGroups();
     });
   };
 
-  function shuffleArray(players) {
-    for (var i = players.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = players[i];
-      players[i] = players[j];
-      players[j] = temp;
-    }
-  }
+  // function shuffleArray(players) {
+  //   for (var i = players.length - 1; i > 0; i--) {
+  //     var j = Math.floor(Math.random() * (i + 1));
+  //     var temp = players[i];
+  //     players[i] = players[j];
+  //     players[j] = temp;
+  //   }
+  // }
 
   $(document).ready(function () {
-    $('.myTable').each(function (index) {
-      $(`#myTable${index + 1}`).DataTable({
-        retrieve: true,
-        paging: false,
-        ordering: false,
-        info: false,
-        language: {
-          search: 'Szukaj:',
-          zeroRecords: 'Nie znaleziono pasujących pozycji',
-          emptyTable: 'Brak danych'
-        }
+    const addSettingToTables = () => {
+      $('.myTable').each(function (index) {
+        $(`#myTable${index + 1}`).DataTable({
+          retrieve: true,
+          paging: false,
+          ordering: false,
+          info: false,
+          language: {
+            search: 'Szukaj:',
+            zeroRecords: 'Nie znaleziono pasujących pozycji',
+            emptyTable: 'Brak danych'
+          }
+        });
       });
-    });
+    };
+    addSettingToTables();
   });
 
   let html = '';
+  let htmlAllPlayers = '';
+
   const createAllGamesTables = () => {
-    groups.forEach(function (e, i) {
+    const sortedGroupsById = groups.sort((a, b) => (a.id > b.id ? 1 : -1));
+
+    sortedGroupsById.forEach(function (e) {
       html +=
         '<tr>' +
         '<td>' +
@@ -156,9 +161,8 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
     document.getElementById(`dataTable${indexgameEndTimes}`).innerHTML = html;
   };
 
-  let htmlAllPlayers = '';
   const createAllPLayersTables = () => {
-    allPlayers.forEach(function (e, i) {
+    allPlayers.forEach(function (e) {
       htmlAllPlayers +=
         '<tr>' + '<td>' + e.name + '</td>' + '<td>' + e.endTime.substring(11) + '</td>' + '</tr>';
     });
@@ -168,8 +172,8 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
 
   // shuffleArray(players);
   filterPlayersPlayingUntilTheGivenTime(gameEndTime);
-  calcBestPlayersNumberInGroup(playersPlayingUntilTheGivenTime.length);
-  createGroups(numberOfPlayersInTheGroup);
+  calcBestNumberOfGroups(playersPlayingUntilTheGivenTime.length);
+  createGroups(bestGroupsNumber);
   assignPlayersToGroups(playersPlayingUntilTheGivenTime);
   console.log(groups);
   createAllGamesTables();
