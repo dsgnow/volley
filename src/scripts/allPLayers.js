@@ -171,7 +171,7 @@ const allPlayers = [
   {
     id: '23',
     name: 'Monika Szablińska',
-    skill: 2,
+    skill: 1,
     endTime: '2021/02/10 02:00:00',
     info: '',
     gender: 'female'
@@ -408,5 +408,13 @@ const allPlayers = [
     endTime: '2021/02/10 00:00:00',
     info: '',
     gender: 'male'
+  },
+  {
+    id: '54',
+    name: 'Katarzyna Kranz-Kiełtyka',
+    skill: 3,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'female'
   }
 ];
