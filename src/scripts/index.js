@@ -293,7 +293,7 @@ let allPlayers = [
   }
 ];
 
-gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
+gameEndTimes.forEach((gameEndTime, indexOfGameEndTime) => {
   let players = JSON.parse(JSON.stringify(allPlayers));
   let groups = [];
   let malePlayersPlayingUntilTheGivenTime = [];
@@ -349,10 +349,10 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
 
       const pushPlayersToGroups = () => {
         allPlayers[indexOfName].info == ''
-          ? (allPlayers[indexOfName].info += `Rotacja ${indexgameEndTimes + 1} / Grupa: ${
+          ? (allPlayers[indexOfName].info += `Rotacja ${indexOfGameEndTime + 1} / Grupa: ${
               groups[indexOfGroupToPush].id
             }`)
-          : (allPlayers[indexOfName].info += `, <br>Rotacja ${indexgameEndTimes + 1} / Grupa: ${
+          : (allPlayers[indexOfName].info += `, <br>Rotacja ${indexOfGameEndTime + 1} / Grupa: ${
               groups[indexOfGroupToPush].id
             }`);
 
@@ -423,7 +423,7 @@ gameEndTimes.forEach((gameEndTime, indexgameEndTimes) => {
         '</tr>';
     });
 
-    document.getElementById(`dataTable${indexgameEndTimes}`).innerHTML = html;
+    document.getElementById(`dataTable${indexOfGameEndTime}`).innerHTML = html;
   };
 
   const createAllPLayersTables = () => {
