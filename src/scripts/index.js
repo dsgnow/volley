@@ -119,7 +119,7 @@ let allPlayers = [
     id: '21',
     name: 'Ewa Kozłowska',
     skill: 4,
-    endTime: '2021/02/10 01:00:00',
+    endTime: '2021/02/10 00:00:00',
     info: '',
     gender: 'female'
   },
