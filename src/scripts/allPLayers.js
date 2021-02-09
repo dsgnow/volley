@@ -10,7 +10,7 @@ const allPlayers = [
   {
     id: '2',
     name: 'Piotr Stachowicz',
-    skill: 7,
+    skill: 6,
     endTime: '2021/02/10 01:00:00',
     info: '',
     gender: 'male'
@@ -416,5 +416,29 @@ const allPlayers = [
     endTime: '2021/02/10 00:00:00',
     info: '',
     gender: 'female'
+  },
+  {
+    id: '55',
+    name: 'Paweł Klucewicz',
+    skill: 4,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '56',
+    name: 'Kamil Sławiński',
+    skill: 7,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '57',
+    name: 'Sebastian',
+    skill: 9,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
   }
 ];

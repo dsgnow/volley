@@ -13,7 +13,7 @@ let allPlayers = [
   {
     id: '2',
     name: 'Piotr Stachowicz',
-    skill: 7,
+    skill: 6,
     endTime: '2021/02/10 01:00:00',
     info: '',
     gender: 'male'
@@ -37,18 +37,10 @@ let allPlayers = [
   {
     id: '8',
     name: 'Dorian Pilot',
-    skill: 1,
+    skill: 4,
     endTime: '2021/02/10 01:00:00',
     info: '',
     gender: 'male'
-  },
-  {
-    id: '9',
-    name: 'Dagmara Anna',
-    skill: 3,
-    endTime: '2021/02/10 00:00:00',
-    info: '',
-    gender: 'female'
   },
   {
     id: '10',
@@ -156,14 +148,6 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '26',
-    name: 'Iza Ćwiertnia',
-    skill: 4,
-    endTime: '2021/02/10 01:00:00',
-    info: '',
-    gender: 'female'
-  },
-  {
     id: '29',
     name: 'Magda Staniczek',
     skill: 4,
@@ -268,14 +252,6 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '52',
-    name: 'Arkadiusz Filip',
-    skill: 6,
-    endTime: '2021/02/10 01:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
     id: '53',
     name: 'Michał Dajson',
     skill: 6,
@@ -290,6 +266,30 @@ let allPlayers = [
     endTime: '2021/02/10 00:00:00',
     info: '',
     gender: 'female'
+  },
+  {
+    id: '55',
+    name: 'Paweł Klucewicz',
+    skill: 5,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '56',
+    name: 'Kamil Sławiński',
+    skill: 7,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '57',
+    name: 'Sebastian',
+    skill: 9,
+    endTime: '2021/02/10 00:00:00',
+    info: '',
+    gender: 'male'
   }
 ];
 
@@ -367,7 +367,8 @@ gameEndTimes.forEach((gameEndTime, indexOfGameEndTime) => {
         players[indexOfMaxSkill].skill = '';
 
         if (indexOfGroupToPush === groups.length - 1) {
-          groups.length >= 4 && groups.reverse();
+          // groups.length >= 4 && groups.reverse();
+          groups.reverse();
           indexOfGroupToPush = 0;
         } else {
           indexOfGroupToPush++;
