@@ -273,7 +273,8 @@ gameEndTimes.forEach((gameEndTime, indexOfGameEndTime) => {
         players[indexOfMaxSkill].skill = '';
 
         if (indexOfGroupToPush === groups.length - 1) {
-          groups.length >= 4 && groups.reverse();
+          // groups.length >= 4 && groups.reverse();
+          groups.reverse();
           indexOfGroupToPush = 0;
         } else {
           indexOfGroupToPush++;
