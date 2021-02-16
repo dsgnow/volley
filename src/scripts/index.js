@@ -51,12 +51,12 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '36',
-    name: 'Wiktoria Wróblewska',
-    skill: 3,
-    endTime: '2021/01/02 00:00:00',
+    id: '19',
+    name: 'Rafał Kurkowski',
+    skill: 5,
+    endTime: '2021/01/02 01:00:00',
     info: '',
-    gender: 'female'
+    gender: 'male'
   },
   {
     id: '37',
