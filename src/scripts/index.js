@@ -164,10 +164,10 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '32',
-    name: 'Katarzyna Radlak Maga',
-    skill: 4,
-    endTime: '2021/02/10 01:00:00',
+    id: '17',
+    name: 'Wiktoria Jopek',
+    skill: 5,
+    endTime: '2021/02/10 02:00:00',
     info: '',
     gender: 'female'
   },
