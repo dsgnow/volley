@@ -11,18 +11,26 @@ let gameEndTimes = ['2021/01/01 21:31:00', '2021/01/02 00:01:00', '2021/01/02 01
 
 let allPlayers = [
   {
-    id: '7',
-    name: 'Grzegorz Gil',
-    skill: 8,
+    id: '1',
+    name: 'Brylant Barber',
+    skill: 7,
     endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
   {
-    id: '25',
-    name: 'Eugeniusz',
+    id: '2',
+    name: 'Piotr Stachowicz',
+    skill: 6,
+    endTime: '2021/01/02 01:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '55',
+    name: 'Michał Mieszczyński',
     skill: 5,
-    endTime: '2021/01/02 02:00:00',
+    endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
   },
@@ -35,18 +43,34 @@ let allPlayers = [
     gender: 'female'
   },
   {
-    id: '12',
-    name: 'Damian Kita',
-    skill: 10,
-    endTime: '2021/01/02 01:00:00',
+    id: '45',
+    name: 'Piotr Pawełek',
+    skill: 8,
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
   {
-    id: '11',
-    name: 'Marcin Bosman',
-    skill: 8,
-    endTime: '2021/01/02 01:00:00',
+    id: '12',
+    name: 'Damian Kita',
+    skill: 6,
+    endTime: '2021/01/02 02:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '17',
+    name: 'Wiktoria Jopek',
+    skill: 5,
+    endTime: '2021/01/02 02:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '55',
+    name: 'Adam Mru',
+    skill: 6,
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
@@ -54,46 +78,6 @@ let allPlayers = [
     id: '19',
     name: 'Rafał Kurkowski',
     skill: 5,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '37',
-    name: 'Łukasz Wróblewski',
-    skill: 5,
-    endTime: '2021/01/02 00:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '35',
-    name: 'Kamil Wiża',
-    skill: 4,
-    endTime: '2021/01/02 00:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '17',
-    name: 'Wiktoria Jopek',
-    skill: 5,
-    endTime: '2021/02/10 02:00:00',
-    info: '',
-    gender: 'female'
-  },
-  {
-    id: '5',
-    name: 'Wojtek Spalik',
-    skill: 10,
-    endTime: '2021/01/02 00:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '18',
-    name: 'Mateusz Szołtysek',
-    skill: 7,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -102,7 +86,7 @@ let allPlayers = [
     id: '20',
     name: 'Patryk Kacprzycki',
     skill: 6,
-    endTime: '2021/01/02 02:00:00',
+    endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
   },
@@ -110,50 +94,50 @@ let allPlayers = [
     id: '31',
     name: 'Paweł Bis',
     skill: 4,
+    endTime: '2021/01/02 01:00:00',
+    info: '',
+    gender: 'male'
+  },
+  { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 01:00:00', info: '', gender: 'male' },
+  {
+    id: '23',
+    name: 'Monika Szablińska',
+    skill: 1,
+    endTime: '2021/01/02 02:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '7',
+    name: 'Grzegorz Gil',
+    skill: 8,
+    endTime: '2021/01/02 02:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '50',
+    name: 'Aśka Grochowina',
+    skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '54',
+    name: 'Katarzyna Kranz-Kiełtyka',
+    skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '4',
+    name: 'Jackob Boyka',
+    skill: 10,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
-  },
-  { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 00:00:00', info: '', gender: 'male' },
-  {
-    id: '2',
-    name: 'Piotr Stachowicz',
-    skill: 6,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '24',
-    name: 'Katarzyna Dziadecka',
-    skill: 2,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'female'
-  },
-  {
-    id: '21',
-    name: 'Ewa Kozłowska',
-    skill: 3,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'female'
-  },
-  {
-    id: '33',
-    name: 'Damian Dmowski',
-    skill: 9,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '29',
-    name: 'Magda Staniczek',
-    skill: 3,
-    endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'female'
   },
   {
     id: '26',
@@ -172,26 +156,42 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '42',
-    name: 'Bartek Stadler',
+    id: '18',
+    name: 'Mateusz Szołtysek',
+    skill: 7,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '11',
+    name: 'Marcin Bosman',
+    skill: 8,
+    endTime: '2021/01/02 01:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '56',
+    name: 'Sebastian Boruta',
+    skill: 7,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '5',
+    name: 'Wojtek Spalik',
     skill: 10,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
   {
-    id: '46',
-    name: 'Michał Morawiec',
-    skill: 5,
+    id: '8',
+    name: 'Dorian Pilot',
+    skill: 1,
     endTime: '2021/01/02 01:00:00',
-    info: '',
-    gender: 'male'
-  },
-  {
-    id: '47',
-    name: 'Ania Klemczak',
-    skill: 6,
-    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'female'
   }
