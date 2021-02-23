@@ -13,7 +13,7 @@ let allPlayers = [
   {
     id: '1',
     name: 'Brylant Barber',
-    skill: 7,
+    skill: 6,
     endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
@@ -56,7 +56,7 @@ let allPlayers = [
     skill: 6,
     endTime: '2021/01/02 02:00:00',
     info: '',
-    gender: 'female'
+    gender: 'male'
   },
   {
     id: '17',
@@ -85,7 +85,7 @@ let allPlayers = [
   {
     id: '20',
     name: 'Patryk Kacprzycki',
-    skill: 6,
+    skill: 7,
     endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
@@ -100,10 +100,10 @@ let allPlayers = [
   },
   { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 01:00:00', info: '', gender: 'male' },
   {
-    id: '23',
-    name: 'Monika Szablińska',
-    skill: 1,
-    endTime: '2021/01/02 02:00:00',
+    id: '29',
+    name: 'Magda Staniczek',
+    skill: 3,
+    endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'female'
   },
@@ -132,10 +132,10 @@ let allPlayers = [
     gender: 'female'
   },
   {
-    id: '4',
-    name: 'Jackob Boyka',
-    skill: 10,
-    endTime: '2021/01/02 00:00:00',
+    id: '44',
+    name: 'Bartek Król',
+    skill: 5,
+    endTime: '2021/01/02 0:00:00',
     info: '',
     gender: 'male'
   },
@@ -174,7 +174,7 @@ let allPlayers = [
   {
     id: '56',
     name: 'Sebastian Boruta',
-    skill: 7,
+    skill: 10,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -193,7 +193,7 @@ let allPlayers = [
     skill: 1,
     endTime: '2021/01/02 01:00:00',
     info: '',
-    gender: 'female'
+    gender: 'male'
   }
 ];
 

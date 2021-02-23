@@ -333,7 +333,7 @@ const allPlayers = [
     id: '44',
     name: 'Bartek Król',
     skill: 2,
-    endTime: '2021/01/02 02:00:00',
+    endTime: '2021/01/02 0:00:00',
     info: '',
     gender: 'male'
   },
