@@ -3,7 +3,7 @@ const allPlayers = [
     id: '1',
     name: 'Brylant Barber',
     skill: 7,
-    endTime: '2021/01/02 03:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -107,7 +107,7 @@ const allPlayers = [
     id: '14',
     name: 'Damian Czapla',
     skill: 10,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
@@ -119,7 +119,7 @@ const allPlayers = [
     info: '',
     gender: 'male'
   },
-  { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 01:00:00', info: '', gender: 'male' },
+  { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 00:00:00', info: '', gender: 'male' },
   {
     id: '17',
     name: 'Wiktoria Jopek',
@@ -148,7 +148,7 @@ const allPlayers = [
     id: '20',
     name: 'Patryk Kacprzycki',
     skill: 6,
-    endTime: '2021/01/02 02:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
@@ -196,7 +196,7 @@ const allPlayers = [
     id: '26',
     name: 'Iza Ćwiertnia',
     skill: 4,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'female'
   },
@@ -436,6 +436,14 @@ const allPlayers = [
   {
     id: '56',
     name: 'Sebastian Boruta',
+    skill: 6,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '56',
+    name: 'Michał Soblik',
     skill: 6,
     endTime: '2021/01/02 00:00:00',
     info: '',
