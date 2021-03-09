@@ -373,7 +373,7 @@ const allPlayers = [
     id: '49',
     name: 'Sławek Palka',
     skill: 9,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },

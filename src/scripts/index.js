@@ -52,10 +52,10 @@ let allPlayers = [
   },
   { id: '16', name: 'MRa Ra', skill: 9, endTime: '2021/01/02 00:00:00', info: '', gender: 'male' },
   {
-    id: '31',
-    name: 'Paweł Bis',
-    skill: 4,
-    endTime: '2021/01/02 00:00:00',
+    id: '49',
+    name: 'Sławek Palka',
+    skill: 9,
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -67,14 +67,15 @@ let allPlayers = [
     info: '',
     gender: 'female'
   },
-   {
+  {
     id: '12',
     name: 'Damian Kita',
     skill: 10,
     endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
-  }, {
+  },
+  {
     id: '11',
     name: 'Marcin Bosman',
     skill: 8,
@@ -106,7 +107,7 @@ let allPlayers = [
     info: '',
     gender: 'male'
   },
-   {
+  {
     id: '8',
     name: 'Dorian Pilot',
     skill: 1,
@@ -193,8 +194,7 @@ let allPlayers = [
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
-  },
-
+  }
 ];
 
 gameEndTimes.forEach((gameEndTime, indexOfGameEndTime) => {
