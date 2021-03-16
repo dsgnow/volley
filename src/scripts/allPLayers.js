@@ -114,8 +114,8 @@ const allPlayers = [
   {
     id: '15',
     name: 'Grzegorz Sołtysiak',
-    skill: 6,
-    endTime: '2021/01/02 00:00:00',
+    skill: 4,
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -139,7 +139,7 @@ const allPlayers = [
   {
     id: '19',
     name: 'Rafał Kurkowski',
-    skill: 5,
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -147,7 +147,7 @@ const allPlayers = [
   {
     id: '20',
     name: 'Patryk Kacprzycki',
-    skill: 6,
+    skill: 7,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -349,7 +349,7 @@ const allPlayers = [
     id: '46',
     name: 'Michał Morawiec',
     skill: 5,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
@@ -381,7 +381,7 @@ const allPlayers = [
     id: '50',
     name: 'Aśka Grochowina',
     skill: 3,
-    endTime: '2021/01/02 00:00:00',
+    endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'female'
   },
@@ -448,5 +448,29 @@ const allPlayers = [
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
+  },
+  {
+    id: '57',
+    name: 'Michał Majk Le',
+    skill: 2,
+    endTime: '2021/01/02 01:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '58',
+    name: 'Michał (od P. Ważnego)',
+    skill: 8,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '59',
+    name: 'Dawid (od P. Ważnego)',
+    skill: 8,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
   }
-];
+]
