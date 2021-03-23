@@ -82,7 +82,7 @@ const allPlayers = [
   {
     id: '11',
     name: 'Marcin Bosman',
-    skill: 8,
+    skill: 9,
     endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
@@ -154,7 +154,7 @@ const allPlayers = [
   {
     id: '20',
     name: 'Patryk Kacprzycki',
-    skill: 7,
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -227,7 +227,7 @@ const allPlayers = [
     id: '29',
     name: 'Magda Staniczek',
     skill: 3,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'female'
   },
@@ -258,7 +258,7 @@ const allPlayers = [
   {
     id: '33',
     name: 'Damian Dmowski',
-    skill: 9,
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -490,6 +490,14 @@ const allPlayers = [
   {
     id: '60',
     name: 'Basia Lark',
+    skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '60',
+    name: 'Anna Lewicka',
     skill: 3,
     endTime: '2021/01/02 00:00:00',
     info: '',
