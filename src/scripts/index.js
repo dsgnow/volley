@@ -179,26 +179,26 @@ let allPlayers = [
     gender: 'male'
   },
   {
-    id: '36',
-    name: 'Wiktoria Wróblewska',
-    skill: 3,
-    endTime: '2021/01/02 00:00:00',
-    info: '',
-    gender: 'female'
-  },
-  {
-    id: '37',
-    name: 'Łukasz Wróblewski',
-    skill: 5,
+    id: '19',
+    name: 'Rafał Kurkowski',
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
   },
   {
-    id: '35',
-    name: 'Kamil Wiża',
-    skill: 4,
-    endTime: '2021/01/02 00:00:00',
+    id: '10',
+    name: 'Aleksandra Żółkiewicz',
+    skill: 3,
+    endTime: '2021/01/02 02:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '12',
+    name: 'Damian Kita',
+    skill: 10,
+    endTime: '2021/01/02 01:00:00',
     info: '',
     gender: 'male'
   }
