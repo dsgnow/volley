@@ -83,7 +83,7 @@ const allPlayers = [
     id: '11',
     name: 'Marcin Bosman',
     skill: 9,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -187,7 +187,7 @@ const allPlayers = [
     id: '24',
     name: 'Katarzyna Dziadecka',
     skill: 2,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'female'
   },
@@ -347,7 +347,7 @@ const allPlayers = [
     id: '44',
     name: 'Bartek Król',
     skill: 2,
-    endTime: '2021/01/02 0:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -355,7 +355,7 @@ const allPlayers = [
     id: '45',
     name: 'Piotr Pawełek',
     skill: 8,
-    endTime: '2021/01/02 00:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -499,6 +499,62 @@ const allPlayers = [
     id: '60',
     name: 'Anna Lewicka',
     skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '61',
+    name: 'Karol Nazim',
+    skill: 6,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '62',
+    name: 'Karolina Stolarczyk',
+    skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '63',
+    name: 'Paweł Stolarczyk',
+    skill: 7,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '64',
+    name: 'Piotr Rozanka',
+    skill: 5,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '65',
+    name: 'Krzysztof Cudyk',
+    skill: 5,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '66',
+    name: 'Ewa Deja',
+    skill: 3,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'female'
+  },
+  {
+    id: '67',
+    name: 'Kewin Zielonka',
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'female'
