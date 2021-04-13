@@ -155,7 +155,7 @@ const allPlayers = [
     id: '20',
     name: 'Patryk Kacprzycki',
     skill: 8,
-    endTime: '2021/01/02 00:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'male'
   },
@@ -395,7 +395,7 @@ const allPlayers = [
     id: '50',
     name: 'Aśka Grochowina',
     skill: 3,
-    endTime: '2021/01/02 01:00:00',
+    endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'female'
   },
@@ -458,7 +458,7 @@ const allPlayers = [
   {
     id: '56',
     name: 'Michał Soblik',
-    skill: 6,
+    skill: 9,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
@@ -558,5 +558,21 @@ const allPlayers = [
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'female'
+  },
+  {
+    id: '68',
+    name: 'Karol Radzik',
+    skill: 10,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
+  },
+  {
+    id: '68',
+    name: 'Arek Michałek',
+    skill: 8,
+    endTime: '2021/01/02 00:00:00',
+    info: '',
+    gender: 'male'
   }
 ]
