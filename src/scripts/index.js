@@ -139,7 +139,7 @@ let allPlayers = [
   {
     id: '10',
     name: 'Aleksandra Żółkiewicz',
-    skill: 3,
+    skill: 1,
     endTime: '2021/01/02 02:00:00',
     info: '',
     gender: 'female'
