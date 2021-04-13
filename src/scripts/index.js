@@ -195,7 +195,7 @@ let allPlayers = [
   {
     id: '56',
     name: 'Michał Soblik',
-    skill: 9,
+    skill: 8,
     endTime: '2021/01/02 00:00:00',
     info: '',
     gender: 'male'
